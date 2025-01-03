@@ -115,6 +115,22 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Social Media Icons */
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #32CD32; /* Green hover */
+}
+
 /* Links */
 a {
     text-decoration: none;
