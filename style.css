@@ -1,24 +1,36 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333; /* Neutral text color */
 }
 
+/* Header and Navigation */
 header {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+    background-color: #000; /* Black header */
+    color: #fff; /* White text */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #444;
+    padding: 0;
     margin: 0;
 }
 
@@ -29,25 +41,80 @@ nav li {
 nav a {
     text-decoration: none;
     color: #fff;
-    padding: 0.5rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #666;
-    border-radius: 5px;
+    color: #32CD32; /* Green accent color */
 }
 
+/* Buttons */
+.button {
+    background-color: #32CD32; /* Green button */
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #28A428; /* Darker green on hover */
+}
+
+/* Main Content */
 main {
     text-align: center;
     padding: 2rem;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #000;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #555; /* Subtle text color */
+}
+
+/* Footer */
 footer {
-    background-color: #222;
-    color: #fff;
+    background-color: #000; /* Black footer */
+    color: #fff; /* White text */
     text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
 }
